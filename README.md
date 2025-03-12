@@ -13,3 +13,27 @@ Our project will involve:
 2. Storing the API response data in an Amazon S3 bucket.
 3. Ensuring the security and integrity of our data and resources.
 
+### Step 1: Creating an AWS Account and Setting up IAM (as a security professional this step is high priority) 
+
+Before we can start building our project, we need to create an AWS account and set up IAM (Identity and Access Management). <a href="https://aws.amazon.com/free/compute/"> Click Here <a/>
+
+Instead of using the root user, we will create an IAM user with the necessary permissions to perform daily tasks. (best practice) 
+
+1. Log in to the AWS Management Console using your root account credentials.
+2. Navigate to the IAM dashboard and click on "Users" in the left-hand menu.
+3. Click on "Create user" and enter a username, such as "lambda-admin".
+4. Select "Programmatic access" as the access type, as we will be using this user to interact with AWS services via the CLI and SDKs.
+5. Click "Next: Review" and then "Create user".
+6. Create a new group, such as "LambdaAdministrators", and attach the following policies:
+    - "AWSLambdaBasicExecutionRole"
+    - "AmazonS3ReadOnlyAccess"
+    - "CloudWatchLogsReadOnlyAccess"
+7. Add the newly created IAM user to the "LambdaAdministrators" group.
+
+By following these steps, we have created an IAM user with the necessary permissions to perform daily tasks, while also following best practices for security and access management.
+
+Note: As a best practice, it's recommended to use the principle of least privilege when assigning permissions to IAM users and groups. This means granting only the necessary permissions required to perform specific tasks, rather than granting excessive permissions.
+
+We've just created an IAM user with programmatic access. This user will be used to execute our Lambda function.
+
+
