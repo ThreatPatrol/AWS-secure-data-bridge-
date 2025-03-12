@@ -32,7 +32,7 @@ Instead of using the root user, we will create an IAM user with the necessary pe
 
 By following these steps, we have created an IAM user with the necessary permissions to perform daily tasks, while also following best practices for security and access management.
 
-Note: As a best practice, it's recommended to use the principle of least privilege when assigning permissions to IAM users and groups. This means granting only the necessary permissions required to perform specific tasks, rather than granting excessive permissions.
+Note: As a best practice, it's recommended to use the principle of **least privilege** when assigning permissions to IAM users and groups. This means granting only the necessary permissions required to perform specific tasks, rather than granting excessive permissions.
 
 We've just created an IAM user with programmatic access. This user will be used to execute our Lambda function.
 
