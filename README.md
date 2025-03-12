@@ -25,10 +25,12 @@ Instead of using the root user, we will create an IAM user with the necessary pe
 4. Select "Programmatic access" as the access type, as we will be using this user to interact with AWS services via the CLI and SDKs.
 5. Click "Next: Review" and then "Create user".
 6. Create a new group, such as "LambdaAdministrators", and attach the following policies:
+   
     - "AWSLambdaBasicExecutionRole"
     - "AmazonS3ReadOnlyAccess"
     - "CloudWatchLogsReadOnlyAccess"
-7. Add the newly created IAM user to the "LambdaAdministrators" group.
+      
+8. Add the newly created IAM user to the "LambdaAdministrators" group.
 
 By following these steps, we have created an IAM user with the necessary permissions to perform daily tasks, while also following best practices for security and access management.
 
