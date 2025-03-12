@@ -32,6 +32,20 @@ Instead of using the root user, we will create an IAM user with the necessary pe
       
 8. Add the newly created IAM user to the "LambdaAdministrators" group.
 
+In addition to creating an IAM user, we also need to define roles that will be assumed by the Lambda function.
+
+1. Navigate to the IAM dashboard and click on "Roles" in the left-hand menu.
+2. Click on "Create role" and select "AWS service" as the trusted entity type.
+3. Choose "Lambda" as the service that will use the role.
+4. Attach the following policies to the role:
+    - "AWSLambdaBasicExecutionRole"
+    - "AmazonS3ReadOnlyAccess"
+    - "CloudWatchLogsReadOnlyAccess"
+5. Name the role, such as "LambdaExecutionRole".
+6. Note the ARN of the role, as we will need it later when creating the Lambda function.
+
+By defining roles and creating an IAM user, we have established a secure and scalable way to manage access to our AWS resources.
+
 By following these steps, we have created an IAM user with the necessary permissions to perform daily tasks, while also following best practices for security and access management.
 
 Note: As a best practice, it's recommended to use the principle of <a href="https://www.beyondtrust.com/blog/entry/what-is-least-privilege#:~:text=Least%20Privilege%20Access%20&%20Zero%20Trust,Download%20the%20Guide">**least privilege**<a/>  when assigning permissions to IAM users and groups. This means granting only the necessary permissions required to perform specific tasks, rather than granting excessive permissions.
