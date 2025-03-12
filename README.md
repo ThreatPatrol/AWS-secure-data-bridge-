@@ -9,7 +9,7 @@ This project demonstrates a secure serverless data ingestion pipeline using AWS 
 
 Our project will involve:
 
-1. Creating an AWS Lambda function that queries an external API. (OpenWeatherMap API: Provides current and forecasted weather data. (Free tier available) <a href="https://home.openweathermap.org/users/sign_in"> Click Here </a>    
+1. Creating an AWS Lambda function that queries an external API. (OpenWeatherMap API: Provides current and forecasted weather data) (Free tier available) <a href="https://home.openweathermap.org/users/sign_in"> Click Here </a>    
 2. Storing the API response data in an Amazon S3 bucket.
 3. Ensuring the security and integrity of our data and resources.
 
