@@ -38,9 +38,11 @@ In addition to creating an IAM user, we also need to define roles that will be a
 2. Click on "Create role" and select "AWS service" as the trusted entity type.
 3. Choose "Lambda" as the service that will use the role.
 4. Attach the following policies to the role:
+    
     - "AWSLambdaBasicExecutionRole"
     - "AmazonS3ReadOnlyAccess"
     - "CloudWatchLogsReadOnlyAccess"
+      
 5. Name the role, such as "LambdaExecutionRole".
 6. Note the ARN of the role, as we will need it later when creating the Lambda function.
 
