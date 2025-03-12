@@ -1,5 +1,5 @@
 <div align="center">
-<img src="https://github.com/30Gramz/Vulnerability-Management-Reporting-on-Qualys/blob/1c5950ede8bdf4f8473d9b13ea0b5a733b360fc5/images%20(9).jfif">
+<img src="https://github.com/ThreatPatrol/AWS-secure-data-bridge-/blob/663839afa19c18648514dd0475289f70b3170b1a/1713907387571.png">
 </div>
 
 # Vulnerability Management and Remediation (Vulnerability Management Reporting on Qualys)
