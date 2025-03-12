@@ -3,4 +3,4 @@
 </div>
 
 # Vulnerability Management and Remediation (Vulnerability Management Reporting on Qualys)
-Perform a comprehensive vulnerability assessment using Qualys Community Edition to identify critical vulnerabilities in the network infrastructure. Provide actionable remediation recommendations to mitigate identified risks and ensure the security and integrity of the network.
+Perform a comprehensive vulnerability assessment using Qualys Community Edition to identify critical vulnerabilities in the network infrastructure. Provide actionable remediation recommendations to mitigate identified risks and ensure the security and integrity of the network..
