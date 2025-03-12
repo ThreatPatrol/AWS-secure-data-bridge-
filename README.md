@@ -3,6 +3,6 @@
 </div>
 
 ## Data bridge seurity using AWS IAM, Lambda and S3  (Securing data pipeline between cloud services)
-Perform a comprehensive vulnerability assessment using Qualys Community Edition to identify critical vulnerabilities in the network infrastructure. Provide actionable remediation recommendations to mitigate identified risks and ensure the security and integrity of the network..
+This project demonstrates a secure serverless data ingestion pipeline using AWS Lambda. The pipeline retrieves data from a public API, stores it in an Amazon S3 bucket, and ensures data integrity throughout the process. The project showcases best practices for security, data protection, and compliance, making it an ideal reference architecture for organizations seeking to build secure and reliable data pipelines on AWS.
 
 ### Project Overview
