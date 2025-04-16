@@ -54,7 +54,7 @@ Note: As a best practice, it's recommended to use the principle of <a href="http
 
 We've just created an IAM user with programmatic access. This user will be used to execute our Lambda function.
 
-Step 2: Creating an IAM Role for Lambda Execution
+### Step 2: Creating an IAM Role for Lambda Execution
 
 Now that we have an IAM user, we need to create an IAM role that will be used to execute our Lambda function.
 
@@ -101,7 +101,8 @@ Now that we have created the S3 policy, we need to attach it to the IAM role.
 <div align="center">
 <img src="https://github.com/ThreatPatrol/AWS-secure-data-bridge-/blob/0be12053909708f589d00a9bc8145af209cbab69/aws-s3-logo.png" width="350" hieght="350">
 </div>
-Step 3: Creating an S3 Bucket
+
+### Step 3: Creating an S3 Bucket
 
 Now that we have our IAM role and policy in place, let's create an S3 bucket to store our data.
 
