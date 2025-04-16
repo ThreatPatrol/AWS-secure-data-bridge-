@@ -54,4 +54,64 @@ Note: As a best practice, it's recommended to use the principle of <a href="http
 
 We've just created an IAM user with programmatic access. This user will be used to execute our Lambda function.
 
+Step 2: Creating an IAM Role for Lambda Execution
+
+Now that we have an IAM user, we need to create an IAM role that will be used to execute our Lambda function.
+
+1. In the AWS Management Console, navigate to the IAM dashboard.
+2. Click on "Roles" and then "Create role."
+3. Choose "AWS service" as the trusted entity type.
+4. Select "Lambda" as the service that will use the role.
+5. Click "Next: Review" and then "Create role."
+
+Configuring the IAM Role
+
+Now that we have created the IAM role, we need to configure it with the necessary permissions.
+
+1. In the IAM dashboard, click on the role we just created (it should be named "lambda-execution-role").
+2. Click on the "Permissions" tab.
+3. Click on "Attach policies."
+4. Search for the "AWSLambdaExecute" policy and select it.
+5. Click "Attach policy."
+
+Creating a Policy for S3 Access
+
+We also need to create a policy that will allow our Lambda function to access our S3 bucket.
+
+1. In the IAM dashboard, click on "Policies" and then "Create policy."
+2. Choose "Custom policy" and then "JSON."
+3. Paste the following policy document:
+
+
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "AllowS3Access",
+            "Effect": "Allow",
+            "Action": [
+                "s3:GetObject",
+                "s3:PutObject",
+                "s3:DeleteObject"
+            ],
+            "Resource": "arn:aws:s3:::YOUR_BUCKET_NAME/*"
+        }
+    ]
+}
+
+
+Replace "YOUR_BUCKET_NAME" with the name of the S3 bucket we will create later.
+
+4. Click "Review policy" and then "Create policy."
+
+Attaching the S3 Policy to the IAM Role
+
+Now that we have created the S3 policy, we need to attach it to the IAM role.
+
+1. In the IAM dashboard, click on the role we created earlier (it should be named "lambda-execution-role").
+2. Click on the "Permissions" tab.
+3. Click on "Attach policies."
+4. Search for the policy we created earlier (it should be named "S3AccessPolicy").
+5. Click "Attach policy."
+
 
