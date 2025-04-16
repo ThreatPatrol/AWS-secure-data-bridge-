@@ -222,6 +222,8 @@ Now that we have configured our Lambda function, let's write the code that will 
 
 I'll provide you with a sample Python code that you can use as a starting point:
 
+<img scr= "https://github.com/ThreatPatrol/AWS-secure-data-bridge-/blob/ac032c081b317574e09078b7240fc8f35b69d0b2/Annotation%202025-04-16%20094330.png">
+
 
 import boto3
 import requests
