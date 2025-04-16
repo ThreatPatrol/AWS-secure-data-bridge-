@@ -98,8 +98,9 @@ Now that we have created the S3 policy, we need to attach it to the IAM role.
 4. Search for the policy we created earlier (it should be named "S3AccessPolicy").
 5. Click "Attach policy."
 
+<div align="center">
 <img src="https://github.com/ThreatPatrol/AWS-secure-data-bridge-/blob/0be12053909708f589d00a9bc8145af209cbab69/aws-s3-logo.png" width="400" hieght="400">
-
+</ div >
 Step 3: Creating an S3 Bucket
 
 Now that we have our IAM role and policy in place, let's create an S3 bucket to store our data.
