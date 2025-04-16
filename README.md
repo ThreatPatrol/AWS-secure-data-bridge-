@@ -225,26 +225,6 @@ I'll provide you with a sample Python code that you can use as a starting point:
 <img scr="https://github.com/ThreatPatrol/AWS-secure-data-bridge-/blob/ac032c081b317574e09078b7240fc8f35b69d0b2/Annotation%202025-04-16%20094330.png">
 
 
-import boto3
-import requests
-
-s3 = boto3.client('s3')
-
-def lambda_handler(event, context):
-    api_url = os.environ['API_URL']
-    api_key = os.environ['API_KEY']
-    s3_bucket_name = os.environ['S3_BUCKET_NAME']
-
-    # Query the API
-    response = requests.get(api_url, headers={'Authorization': f'Bearer {api_key}'})
-
-    # Store the data in S3
-    s3.put_object(Body=response.content, Bucket=s3_bucket_name, Key='data.json')
-
-    return {
-        'statusCode': 200,
-        'statusMessage': 'OK'
-    }
 
 
 This code queries the API using the requests library and stores the data in our S3 bucket using the boto3 library.
