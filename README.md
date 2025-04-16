@@ -98,6 +98,8 @@ Now that we have created the S3 policy, we need to attach it to the IAM role.
 4. Search for the policy we created earlier (it should be named "S3AccessPolicy").
 5. Click "Attach policy."
 
+<img src="" width="750" hieght="750">
+
 Step 3: Creating an S3 Bucket
 
 Now that we have our IAM role and policy in place, let's create an S3 bucket to store our data.
