@@ -126,7 +126,7 @@ Now that we have created our S3 bucket, let's configure some important propertie
 3. Click on "Edit" next to "Bucket policy."
 4. Paste the following bucket policy:
 
-<img src="https://github.com/ThreatPatrol/AWS-secure-data-bridge-/blob/a395da1e9e43d1a776761450be9e2125a7f87782/Annotation%202025-04-16%20090415.png" width="750" hieght="750">
+<img src="https://github.com/ThreatPatrol/AWS-secure-data-bridge-/blob/a395da1e9e43d1a776761450be9e2125a7f87782/Annotation%202025-04-16%20090415.png" width="300" hieght="300">
 
 
 Replace "my-lambda-bucket" with the name of your S3 bucket.
