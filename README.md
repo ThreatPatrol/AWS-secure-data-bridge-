@@ -98,4 +98,61 @@ Now that we have created the S3 policy, we need to attach it to the IAM role.
 4. Search for the policy we created earlier (it should be named "S3AccessPolicy").
 5. Click "Attach policy."
 
+Step 3: Creating an S3 Bucket
+
+Now that we have our IAM role and policy in place, let's create an S3 bucket to store our data.
+
+1. Log in to the AWS Management Console.
+2. Navigate to the S3 dashboard.
+3. Click on "Create bucket."
+4. Enter a unique name for your bucket (e.g., "my-lambda-bucket").
+5. Choose a region for your bucket (e.g., "US East (N. Virginia)").
+6. Click "Create bucket."
+
+Configuring S3 Bucket Properties
+
+Now that we have created our S3 bucket, let's configure some important properties.
+
+1. Go to the S3 dashboard and select the bucket you just created.
+2. Click on the "Properties" tab.
+3. Click on "Edit" next to "Bucket policy."
+4. Paste the following bucket policy:
+
+
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "AllowLambdaExecution",
+            "Effect": "Allow",
+            "Principal": {
+                "Service": "lambda.amazonaws.com"
+            },
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::my-lambda-bucket/*"
+        }
+    ]
+}
+
+
+Replace "my-lambda-bucket" with the name of your S3 bucket.
+
+5. Click "Save changes."
+
+Enabling Versioning and Server-Side Encryption
+
+To ensure data integrity and security, let's enable versioning and server-side encryption for our S3 bucket.
+
+1. Go to the S3 dashboard and select the bucket you created.
+2. Click on the "Properties" tab.
+3. Click on "Edit" next to "Versioning."
+4. Select "Enable versioning."
+5. Click "Save changes."
+
+6. Click on "Edit" next to "Server-side encryption."
+7. Select "Enable server-side encryption."
+8. Choose "AWS Key Management Service (KMS)" as the encryption type.
+9. Click "Save changes."
+
+
 
