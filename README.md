@@ -255,6 +255,11 @@ If you encounter any errors during testing, you can troubleshoot by:
 2. Verifying that the API is returning the expected data.
 3. Checking the S3 bucket permissions to ensure that the Lambda function has the necessary permissions to write to the bucket.
 
+
+<div align="centre">
+<img src="https://github.com/ThreatPatrol/AWS-secure-data-bridge-/blob/ddccbf59908e163d80e7f417b5091de666dca785/download%20(5).jfif">  
+</div>   
+
 ### Step 6: Configuring API Gateway
 
 Now that we have our Lambda function working, let's configure API Gateway to act as an entry point for our API.
