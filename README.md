@@ -188,6 +188,66 @@ There are three types of SSE in S3:
 
 In our project, we enabled SSE-KMS, which means that AWS KMS manages the encryption keys for our S3 bucket.
 
+### Step 4: Creating an AWS Lambda Function
+
+Now that we have our S3 bucket and IAM role set up, let's create an AWS Lambda function that will query the API and store the data in our S3 bucket.
+
+1. Log in to the AWS Management Console.
+2. Navigate to the Lambda dashboard.
+3. Click on "Create function."
+4. Choose "Author from scratch."
+5. Select "Python" as the runtime.
+6. Choose the IAM role we created earlier (it should be named "lambda-execution-role").
+7. Set the handler to "index.lambda_handler".
+8. Click "Create function."
+
+Configuring the Lambda Function
+
+Now that we have created our Lambda function, let's configure it to query the API and store the data in our S3 bucket.
+
+1. In the Lambda function configuration, click on the "Configuration" tab.
+2. Scroll down to the "Environment variables" section.
+3. Click on "Edit".
+4. Add the following environment variables:
+
+- API_URL: the URL of the API you want to query
+- API_KEY: the API key for the API (if required)
+- S3_BUCKET_NAME: the name of the S3 bucket we created earlier
+
+5. Click "Save".
+
+Writing the Lambda Function Code
+
+Now that we have configured our Lambda function, let's write the code that will query the API and store the data in our S3 bucket.
+
+I'll provide you with a sample Python code that you can use as a starting point:
+
+
+import boto3
+import requests
+
+s3 = boto3.client('s3')
+
+def lambda_handler(event, context):
+    api_url = os.environ['API_URL']
+    api_key = os.environ['API_KEY']
+    s3_bucket_name = os.environ['S3_BUCKET_NAME']
+
+    # Query the API
+    response = requests.get(api_url, headers={'Authorization': f'Bearer {api_key}'})
+
+    # Store the data in S3
+    s3.put_object(Body=response.content, Bucket=s3_bucket_name, Key='data.json')
+
+    return {
+        'statusCode': 200,
+        'statusMessage': 'OK'
+    }
+
+
+This code queries the API using the requests library and stores the data in our S3 bucket using the boto3 library.
+
+
 
 
 
