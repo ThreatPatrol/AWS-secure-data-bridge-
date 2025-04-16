@@ -255,6 +255,58 @@ If you encounter any errors during testing, you can troubleshoot by:
 2. Verifying that the API is returning the expected data.
 3. Checking the S3 bucket permissions to ensure that the Lambda function has the necessary permissions to write to the bucket.
 
+### Step 6: Configuring API Gateway
+
+Now that we have our Lambda function working, let's configure API Gateway to act as an entry point for our API.
+
+1. Log in to the AWS Management Console.
+2. Navigate to the API Gateway dashboard.
+3. Click on "Create API".
+4. Choose "REST API".
+5. Click "Build".
+
+Creating a Resource
+
+Let's create a resource for our API.
+
+1. In the API Gateway dashboard, click on the "Resources" tab.
+2. Click on "Create resource".
+3. Enter a name for the resource (e.g. "data").
+4. Click "Create resource".
+
+Creating a Method
+
+Let's create a method for our API.
+
+1. In the API Gateway dashboard, click on the "Resources" tab.
+2. Select the resource we created earlier.
+3. Click on "Create method".
+4. Choose "GET" as the method type.
+5. Click "Save".
+
+Configuring the Integration
+
+Let's configure the integration for our API.
+
+1. In the API Gateway dashboard, click on the "Resources" tab.
+2. Select the resource we created earlier.
+3. Select the "GET" method we created earlier.
+4. Click on the "Integration Request" tab.
+5. Choose "Lambda Function" as the integration type.
+6. Select the Lambda function we created earlier.
+7. Click "Save".
+
+Deploying the API
+
+Let's deploy our API.
+
+1. In the API Gateway dashboard, click on the "Actions" tab.
+2. Click on "Deploy API".
+3. Choose "New stage" as the deployment stage.
+4. Enter a name for the stage (e.g. "prod").
+5. Click "Deploy".
+
+
 
 
 
