@@ -54,6 +54,10 @@ Note: As a best practice, it's recommended to use the principle of <a href="http
 
 We've just created an IAM user with programmatic access. This user will be used to execute our Lambda function.
 
+<div align="center">
+<img src="" width="350" hieght="350">
+</div>
+
 ### Step 2: Creating an IAM Role for Lambda Execution
 
 Now that we have an IAM user, we need to create an IAM role that will be used to execute our Lambda function.
