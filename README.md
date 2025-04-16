@@ -224,10 +224,35 @@ I'll provide you with a sample Python code that you can use as a starting point:
 
 <img src="https://github.com/ThreatPatrol/AWS-secure-data-bridge-/blob/444f06f648765afedf779cd62547d3590bdd9c6c/Annotation%202025-04-16%20094330.png" width="1050" hieght="1100">
 
-
-
-
 This code queries the API using the requests library and stores the data in our S3 bucket using the boto3 library.
+
+### Step 5: Testing the Lambda Function
+
+Now that we have written the Lambda function code, let's test it to make sure it's working as expected.
+
+1. In the Lambda function configuration, click on the "Test" button.
+2. Select "Hello World" as the test event.
+3. Click "Save and test".
+
+The Lambda function will execute and you should see the output in the "Function logs" section.
+
+Verifying the S3 Bucket
+
+Let's also verify that the Lambda function is storing the data in our S3 bucket.
+
+1. Go to the S3 dashboard.
+2. Select the bucket we created earlier.
+3. Click on the "Objects" tab.
+
+You should see a new object named "data.json" in the bucket. This is the data that the Lambda function retrieved from the API and stored in the bucket.
+
+Troubleshooting
+
+If you encounter any errors during testing, you can troubleshoot by:
+
+1. Checking the Lambda function logs for errors.
+2. Verifying that the API is returning the expected data.
+3. Checking the S3 bucket permissions to ensure that the Lambda function has the necessary permissions to write to the bucket.
 
 
 
