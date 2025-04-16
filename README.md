@@ -80,7 +80,7 @@ We also need to create a policy that will allow our Lambda function to access ou
 
 1. In the IAM dashboard, click on "Policies" and then "Create policy."
 2. Choose "Custom policy" and then "JSON."
-3. Paste the following policy document:
+3. Copy and print the following policy document:
 
 
 <img src="https://github.com/ThreatPatrol/AWS-secure-data-bridge-/blob/4ec37f59ba8218a00ac87b7e572cd450e13da187/Annotation%202025-04-16%20083822.png" width="750" hieght="750">
