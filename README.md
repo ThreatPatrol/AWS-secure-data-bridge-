@@ -126,21 +126,7 @@ Now that we have created our S3 bucket, let's configure some important propertie
 3. Click on "Edit" next to "Bucket policy."
 4. Paste the following bucket policy:
 
-
-{
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Sid": "AllowLambdaExecution",
-            "Effect": "Allow",
-            "Principal": {
-                "Service": "lambda.amazonaws.com"
-            },
-            "Action": "s3:GetObject",
-            "Resource": "arn:aws:s3:::my-lambda-bucket/*"
-        }
-    ]
-}
+<img src="" width="750" hieght="750">
 
 
 Replace "my-lambda-bucket" with the name of your S3 bucket.
