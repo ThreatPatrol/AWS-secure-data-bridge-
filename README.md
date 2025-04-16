@@ -249,7 +249,6 @@ You should see a new object named "data.json" in the bucket. This is the data th
 <img src="https://github.com/ThreatPatrol/AWS-secure-data-bridge-/blob/9291fc43ed20a77b29d76fc72b7441bc5c1ae8d0/Annotation%202025-04-16%20101528.png">
 
 Troubleshooting
-
 If you encounter any errors during testing, you can troubleshoot by:
 
 1. Checking the Lambda function logs for errors.
