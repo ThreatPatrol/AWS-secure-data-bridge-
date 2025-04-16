@@ -82,9 +82,9 @@ We also need to create a policy that will allow our Lambda function to access ou
 2. Choose "Custom policy" and then "JSON."
 3. Paste the following policy document:
 
-<div align="center">
+
 <img src="https://github.com/ThreatPatrol/AWS-secure-data-bridge-/blob/4ec37f59ba8218a00ac87b7e572cd450e13da187/Annotation%202025-04-16%20083822.png" width="550" hieght="550">
-</div>
+
 
 4. Click "Review policy" and then "Create policy."
 
