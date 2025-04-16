@@ -55,7 +55,7 @@ Note: As a best practice, it's recommended to use the principle of <a href="http
 We've just created an IAM user with programmatic access. This user will be used to execute our Lambda function.
 
 <div align="center">
-<img src="" width="350" hieght="350">
+<img src="https://github.com/ThreatPatrol/AWS-secure-data-bridge-/blob/7aca57fe077afa2efd7f31a8a21904a0bf72e3b3/1_uzSunZS144KT-DGHrIXSkg.png" width="350" hieght="350">
 </div>
 
 ### Step 2: Creating an IAM Role for Lambda Execution
