@@ -82,25 +82,9 @@ We also need to create a policy that will allow our Lambda function to access ou
 2. Choose "Custom policy" and then "JSON."
 3. Paste the following policy document:
 
-
-{
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Sid": "AllowS3Access",
-            "Effect": "Allow",
-            "Action": [
-                "s3:GetObject",
-                "s3:PutObject",
-                "s3:DeleteObject"
-            ],
-            "Resource": "arn:aws:s3:::YOUR_BUCKET_NAME/*"
-        }
-    ]
-}
-
-
-Replace "YOUR_BUCKET_NAME" with the name of the S3 bucket we will create later.
+<div align="center">
+<img src="https://github.com/ThreatPatrol/AWS-secure-data-bridge-/blob/663839afa19c18648514dd0475289f70b3170b1a/1713907387571.png" width="550" hieght="550">
+</div>
 
 4. Click "Review policy" and then "Create policy."
 
