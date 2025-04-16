@@ -188,7 +188,7 @@ There are three types of SSE in S3:
 
 In our project, we enabled SSE-KMS, which means that AWS KMS manages the encryption keys for our S3 bucket.
 
-I hope this explanation helps! Do you have any more questions about versioning or server-side encryption?
+
 
 
 
